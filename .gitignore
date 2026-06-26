@@ -1,1 +1,3 @@
-results/syco
+results
+.local_env
+src/main/old
