@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1064.4pt" height="308.4pt" viewBox="0 0 1064.4 308.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-25T20:58:04.415574</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 308.4 
+L 1064.4 308.4 
+L 1064.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 7.2 154.2 
+L 136.575 154.2 
+L 136.575 127.331313 
+L 7.2 127.331313 
+z
+" style="fill: #0f4d92; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="fill: #ffffff; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="71.8875" y="143.098625" transform="rotate(-0 71.8875 143.098625)">Model</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 136.575 154.2 
+L 265.95 154.2 
+L 265.95 127.331313 
+L 136.575 127.331313 
+z
+" style="fill: #0f4d92; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="fill: #ffffff; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(190.846406 138.34536)">Total</text>
+     <text style="fill: #ffffff; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(190.013203 147.851891)">Runs</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 265.95 154.2 
+L 395.325 154.2 
+L 395.325 127.331313 
+L 265.95 127.331313 
+z
+" style="fill: #0f4d92; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="fill: #ffffff; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="330.6375" y="143.098625" transform="rotate(-0 330.6375 143.098625)">Failed</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 395.325 154.2 
+L 524.7 154.2 
+L 524.7 127.331313 
+L 395.325 127.331313 
+z
+" style="fill: #0f4d92; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="fill: #ffffff; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(445.258828 138.34536)">Failure</text>
+     <text style="fill: #ffffff; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(450.259453 147.851891)">Rate</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 7.2 181.068687 
+L 136.575 181.068687 
+L 136.575 154.2 
+L 7.2 154.2 
+z
+" style="fill: #cfcece; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="fill: #333333; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="71.8875" y="169.963093" transform="rotate(-0 71.8875 169.963093)">All models (total)</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 136.575 181.068687 
+L 265.95 181.068687 
+L 265.95 154.2 
+L 136.575 154.2 
+z
+" style="fill: #cfcece; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="fill: #333333; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="201.2625" y="169.967312" transform="rotate(-0 201.2625 169.967312)">1425</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 265.95 181.068687 
+L 395.325 181.068687 
+L 395.325 154.2 
+L 265.95 154.2 
+z
+" style="fill: #cfcece; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="fill: #333333; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="330.6375" y="169.967312" transform="rotate(-0 330.6375 169.967312)">0</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 395.325 181.068687 
+L 524.7 181.068687 
+L 524.7 154.2 
+L 395.325 154.2 
+z
+" style="fill: #cfcece; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="fill: #333333; font: 700 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="460.0125" y="169.967312" transform="rotate(-0 460.0125 169.967312)">0.0%</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="text_9">
+    <g id="patch_10">
+     <path d="M 707.149141 171.792094 
+L 889.750859 171.792094 
+Q 896.350859 171.792094 896.350859 165.192094 
+L 896.350859 143.336812 
+Q 896.350859 136.736812 889.750859 136.736812 
+L 707.149141 136.736812 
+Q 700.549141 136.736812 700.549141 143.336812 
+L 700.549141 165.192094 
+Q 700.549141 171.792094 707.149141 171.792094 
+z
+" style="fill: #f0fff0; stroke: #8bcf8b; stroke-width: 1.2; stroke-linejoin: miter"/>
+    </g>
+    <text style="fill: #4d4d4d; font: 11px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(721.407031 151.0815)">No evaluation failures detected.</text>
+    <text style="fill: #4d4d4d; font: 11px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(707.149141 162.876937)">All 1425 runs completed successfully.</text>
+   </g>
+  </g>
+ </g>
+</svg>

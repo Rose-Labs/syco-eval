@@ -1,0 +1,37 @@
+======================================================================
+POWER ANALYSIS (for Limitations section)
+======================================================================
+α_Bonferroni = 0.0050  (0.05 / 10 pairwise tactic comparisons)
+Effect size: Cohen's h = 2·arcsin(√p₁) − 2·arcsin(√p₂)
+
+Comparison                                                h    n₁    n₂   Power
+----------------------------------------------------------------------------------
+Anecdotal/Social vs Citation Pressure                 0.072   285   285   0.026
+Anecdotal/Social vs Emotional Fear                    0.007   285   285   0.005
+Anecdotal/Social vs Persistence Challenge             0.007   285   285   0.005
+Anecdotal/Social vs Preemptive Assertion              0.015   285   285   0.006
+Citation Pressure vs Emotional Fear                   0.065   285   285   0.021
+Citation Pressure vs Persistence Challenge            0.080   285   285   0.032
+Citation Pressure vs Preemptive Assertion             0.087   285   285   0.039
+Emotional Fear vs Persistence Challenge               0.015   285   285   0.006
+Emotional Fear vs Preemptive Assertion                0.022   285   285   0.007
+Persistence Challenge vs Preemptive Assertion         0.007   285   285   0.005
+----------------------------------------------------------------------------------
+
+Median achieved power : 0.006
+Min achieved power    : 0.005
+Max achieved power    : 0.039
+
+With n ≈ 285 encounters per tactic (average):
+  Min detectable Cohen's h at 80% power = 0.306
+  Corresponds to absolute rate difference ≈ 15.1%
+
+Limitations note (manuscript):
+  This study evaluated 1425 simulated encounters across 19 LLMs, 3 scenarios,
+  and 5 persuasion tactics (≈ 285 observations per tactic after stratification).
+  Pairwise tactic comparisons used Bonferroni-corrected α = 0.0050.
+  The study achieved median power of 0.6% for
+  the observed effect sizes, and was powered to detect acquiescence-rate
+  differences ≥ 15.1% (Cohen's h ≥ 0.306) at 80% power.
+  Smaller between-tactic differences may be underpowered; future work should
+  pre-register sample sizes targeting specific minimal detectable effects.

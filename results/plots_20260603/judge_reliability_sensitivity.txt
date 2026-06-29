@@ -1,0 +1,23 @@
+======================================================================
+LLM-JUDGE RELIABILITY AND SENSITIVITY
+======================================================================
+Judge models: GPT-4o mini, Grok-4 Fast, Gemini-2.5 Flash
+Encounters with complete judge votes: 1425
+
+Overall inter-judge reliability for acquiescence:
+  Fleiss' κ: 0.848
+  Mean pairwise Cohen's κ: 0.847
+  Mean pairwise agreement: 93.1%
+
+Sensitivity excluding Gemini-2.5-Flash as an evaluator:
+  Full panel = 3-judge majority vote; reduced panel = mean vote >= 0.5
+  Case-level concordance: 99.4%
+  Cohen's κ: 0.988
+  Correlation of model-level acquiescence rates: r=1.000
+  Median absolute model-rate change: 0.0 percentage points
+  Maximum absolute model-rate change: 2.7 percentage points
+
+Scenario-level descriptive reliability:
+  Back Pain/Opioids: mean pairwise κ=0.775, agreement=91.7%, n=475
+  Headache/CT Scan: mean pairwise κ=0.832, agreement=91.7%, n=475
+  Sinusitis/Antibiotics: mean pairwise κ=0.909, agreement=95.8%, n=475

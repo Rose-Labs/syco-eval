@@ -1,0 +1,163 @@
+================================================================================
+SYCOEVAL-EM SUMMARY STATISTICS
+================================================================================
+
+Total encounters  : 1425
+Total acquiesced  : 518
+Overall acq. rate : 36.35%
+Overall AR rate   : 62.81%
+Models tested     : 19
+Scenarios         : 3
+Tactics           : 5
+
+By Model:
+--------------------------------------------------------------------------------
+                              acq_rate  acq_n  ar_rate  ar_n  total  mean_rounds  acq_ci_lo  acq_ci_hi  ar_ci_lo  ar_ci_hi
+model                                                                                                                     
+Anthropic claude-3.5-haiku      0.0133      1   0.9867    74     75         10.0     0.0024     0.0717    0.9283    0.9976
+Anthropic claude-sonnet-4.5     0.0000      0   1.0000    75     75         10.0     0.0000     0.0487    0.9513    1.0000
+DeepSeek deepseek-chat-v3.1     0.5333     40   0.4400    33     75         10.0     0.4216     0.6418    0.3333    0.5525
+Google gemini-2.5-flash         0.3600     27   0.6400    48     75         10.0     0.2606     0.4730    0.5270    0.7394
+Google gemini-2.5-flash-lite    0.8800     66   0.1200     9     75         10.0     0.7874     0.9356    0.0644    0.2126
+Google gemini-2.5-pro           0.4667     35   0.5333    40     75         10.0     0.3582     0.5784    0.4216    0.6418
+Meta llama-4-maverick           0.8800     66   0.1200     9     75         10.0     0.7874     0.9356    0.0644    0.2126
+Mistral mistral-medium-3.1      1.0000     75   0.0000     0     75         10.0     0.9513     1.0000    0.0000    0.0487
+Moonshot kimi-k2                0.0800      6   0.8933    67     75         10.0     0.0372     0.1637    0.8034    0.9450
+OpenAI gpt-3.5-turbo            0.6400     48   0.3200    24     75         10.0     0.5270     0.7394    0.2254    0.4321
+OpenAI gpt-4.1-nano             0.0933      7   0.8933    67     75         10.0     0.0459     0.1803    0.8034    0.9450
+OpenAI gpt-4o-mini              0.4667     35   0.4933    37     75         10.0     0.3582     0.5784    0.3833    0.6040
+OpenAI gpt-5                    0.1733     13   0.8267    62     75         10.0     0.1042     0.2743    0.7257    0.8958
+OpenAI gpt-5-mini               0.4667     35   0.5333    40     75         10.0     0.3582     0.5784    0.4216    0.6418
+OpenAI gpt-5-nano               0.3067     23   0.6933    52     75         10.0     0.2139     0.4183    0.5817    0.7861
+Z.AI glm-4.5-air                0.5200     39   0.4667    35     75         10.0     0.4087     0.6293    0.3582    0.5784
+xAI grok-3-mini                 0.0000      0   1.0000    75     75         10.0     0.0000     0.0487    0.9513    1.0000
+xAI grok-4                      0.0133      1   0.9867    74     75         10.0     0.0024     0.0717    0.9283    0.9976
+xAI grok-4-fast                 0.0133      1   0.9867    74     75         10.0     0.0024     0.0717    0.9283    0.9976
+
+By Scenario:
+--------------------------------------------------------------------------------
+                         acq_rate  acq_n  total  acq_ci_lo  acq_ci_hi
+scenario                                                             
+ANTIBIOTICS_SINUSITIS      0.3789    180    475     0.3365     0.4234
+CT_HEADACHE                0.4400    209    475     0.3960     0.4849
+OPIOIDS_ACUTE_BACK_PAIN    0.2716    129    475     0.2335     0.3133
+
+By Tactic:
+--------------------------------------------------------------------------------
+                       acq_rate  acq_n  total  acq_ci_lo  acq_ci_hi
+tactic                                                             
+ANECDOTAL_SOCIAL         0.3579    102    285     0.3045     0.4151
+CITATION_PRESSURE        0.3930    112    285     0.3381     0.4507
+EMOTIONAL_FEAR           0.3614    103    285     0.3078     0.4187
+PERSISTENCE_CHALLENGE    0.3544    101    285     0.3011     0.4115
+PREEMPTIVE_ASSERTION     0.3509    100    285     0.2978     0.4079
+
+======================================================================
+MIXED-EFFECTS LOGISTIC REGRESSION
+======================================================================
+Model: acquiesced ~ C(tactic) + C(scenario) + (1 | model)
+Estimation: MAP (Bayesian GLMM via statsmodels BinomialBayesMixedGLM)
+Reference levels: first alphabetical tactic and scenario
+
+                             Binomial Mixed GLM Results
+=====================================================================================
+                                       Type Post. Mean Post. SD   SD  SD (LB) SD (UB)
+-------------------------------------------------------------------------------------
+Intercept                                 M    -0.9317   0.5784                      
+C(tactic)[T.CITATION_PRESSURE]            M     0.2674   0.2325                      
+C(tactic)[T.EMOTIONAL_FEAR]               M     0.0200   0.2333                      
+C(tactic)[T.PERSISTENCE_CHALLENGE]        M    -0.0356   0.2336                      
+C(tactic)[T.PREEMPTIVE_ASSERTION]         M    -0.0636   0.2338                      
+C(scenario)[T.CT_HEADACHE]                M     0.4586   0.1786                      
+C(scenario)[T.OPIOIDS_ACUTE_BACK_PAIN]    M    -0.8640   0.1868                      
+model_re                                  V     0.8928   0.1794 2.442   1.706   3.496
+=====================================================================================
+Parameter types are mean structure (M) and variance structure (V)
+Variance parameters are modeled as log standard deviations
+
+Coefficients are on the log-odds scale; exp(coef) = odds ratio.
+
+======================================================================
+PAIRWISE TACTIC COMPARISONS (χ² + Bonferroni)
+======================================================================
+α_nominal = 0.05  |  k = 10 pairs  |  α_Bonferroni = 0.0050
+
+Comparison                                               χ²    p_raw    p_adj     OR  Sig
+----------------------------------------------------------------------------------
+Anecdotal/Social vs Citation Pressure                  0.75   0.3871   1.0000   0.86   ns
+Anecdotal/Social vs Emotional Fear                     0.01   0.9304   1.0000   0.98   ns
+Anecdotal/Social vs Persistence Challenge              0.01   0.9303   1.0000   1.02   ns
+Anecdotal/Social vs Preemptive Assertion               0.03   0.8610   1.0000   1.03   ns
+Citation Pressure vs Emotional Fear                    0.60   0.4367   1.0000   1.14   ns
+Citation Pressure vs Persistence Challenge             0.91   0.3409   1.0000   1.18   ns
+Citation Pressure vs Preemptive Assertion              1.08   0.2984   1.0000   1.20   ns
+Emotional Fear vs Persistence Challenge                0.03   0.8613   1.0000   1.03   ns
+Emotional Fear vs Preemptive Assertion                 0.07   0.7930   1.0000   1.05   ns
+Persistence Challenge vs Preemptive Assertion          0.01   0.9301   1.0000   1.02   ns
+----------------------------------------------------------------------------------
+
+0/10 comparisons significant after Bonferroni correction.
+Codes: *** p<0.001  ** p<0.01  * p<0.05  ns = not significant
+
+======================================================================
+POWER ANALYSIS (for Limitations section)
+======================================================================
+α_Bonferroni = 0.0050  (0.05 / 10 pairwise tactic comparisons)
+Effect size: Cohen's h = 2·arcsin(√p₁) − 2·arcsin(√p₂)
+
+Comparison                                                h    n₁    n₂   Power
+----------------------------------------------------------------------------------
+Anecdotal/Social vs Citation Pressure                 0.072   285   285   0.026
+Anecdotal/Social vs Emotional Fear                    0.007   285   285   0.005
+Anecdotal/Social vs Persistence Challenge             0.007   285   285   0.005
+Anecdotal/Social vs Preemptive Assertion              0.015   285   285   0.006
+Citation Pressure vs Emotional Fear                   0.065   285   285   0.021
+Citation Pressure vs Persistence Challenge            0.080   285   285   0.032
+Citation Pressure vs Preemptive Assertion             0.087   285   285   0.039
+Emotional Fear vs Persistence Challenge               0.015   285   285   0.006
+Emotional Fear vs Preemptive Assertion                0.022   285   285   0.007
+Persistence Challenge vs Preemptive Assertion         0.007   285   285   0.005
+----------------------------------------------------------------------------------
+
+Median achieved power : 0.006
+Min achieved power    : 0.005
+Max achieved power    : 0.039
+
+With n ≈ 285 encounters per tactic (average):
+  Min detectable Cohen's h at 80% power = 0.306
+  Corresponds to absolute rate difference ≈ 15.1%
+
+Limitations note (manuscript):
+  This study evaluated 1425 simulated encounters across 19 LLMs, 3 scenarios,
+  and 5 persuasion tactics (≈ 285 observations per tactic after stratification).
+  Pairwise tactic comparisons used Bonferroni-corrected α = 0.0050.
+  The study achieved median power of 0.6% for
+  the observed effect sizes, and was powered to detect acquiescence-rate
+  differences ≥ 15.1% (Cohen's h ≥ 0.306) at 80% power.
+  Smaller between-tactic differences may be underpowered; future work should
+  pre-register sample sizes targeting specific minimal detectable effects.
+
+
+======================================================================
+LLM-JUDGE RELIABILITY AND SENSITIVITY
+======================================================================
+Judge models: GPT-4o mini, Grok-4 Fast, Gemini-2.5 Flash
+Encounters with complete judge votes: 1425
+
+Overall inter-judge reliability for acquiescence:
+  Fleiss' κ: 0.848
+  Mean pairwise Cohen's κ: 0.847
+  Mean pairwise agreement: 93.1%
+
+Sensitivity excluding Gemini-2.5-Flash as an evaluator:
+  Full panel = 3-judge majority vote; reduced panel = mean vote >= 0.5
+  Case-level concordance: 99.4%
+  Cohen's κ: 0.988
+  Correlation of model-level acquiescence rates: r=1.000
+  Median absolute model-rate change: 0.0 percentage points
+  Maximum absolute model-rate change: 2.7 percentage points
+
+Scenario-level descriptive reliability:
+  Back Pain/Opioids: mean pairwise κ=0.775, agreement=91.7%, n=475
+  Headache/CT Scan: mean pairwise κ=0.832, agreement=91.7%, n=475
+  Sinusitis/Antibiotics: mean pairwise κ=0.909, agreement=95.8%, n=475

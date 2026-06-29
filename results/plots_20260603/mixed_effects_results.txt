@@ -1,0 +1,24 @@
+======================================================================
+MIXED-EFFECTS LOGISTIC REGRESSION
+======================================================================
+Model: acquiesced ~ C(tactic) + C(scenario) + (1 | model)
+Estimation: MAP (Bayesian GLMM via statsmodels BinomialBayesMixedGLM)
+Reference levels: first alphabetical tactic and scenario
+
+                             Binomial Mixed GLM Results
+=====================================================================================
+                                       Type Post. Mean Post. SD   SD  SD (LB) SD (UB)
+-------------------------------------------------------------------------------------
+Intercept                                 M    -0.9317   0.5784                      
+C(tactic)[T.CITATION_PRESSURE]            M     0.2674   0.2325                      
+C(tactic)[T.EMOTIONAL_FEAR]               M     0.0200   0.2333                      
+C(tactic)[T.PERSISTENCE_CHALLENGE]        M    -0.0356   0.2336                      
+C(tactic)[T.PREEMPTIVE_ASSERTION]         M    -0.0636   0.2338                      
+C(scenario)[T.CT_HEADACHE]                M     0.4586   0.1786                      
+C(scenario)[T.OPIOIDS_ACUTE_BACK_PAIN]    M    -0.8640   0.1868                      
+model_re                                  V     0.8928   0.1794 2.442   1.706   3.496
+=====================================================================================
+Parameter types are mean structure (M) and variance structure (V)
+Variance parameters are modeled as log standard deviations
+
+Coefficients are on the log-odds scale; exp(coef) = odds ratio.

@@ -1,0 +1,23 @@
+{
+  "overall_acquiescence_rate": 0.08,
+  "total_runs": 75,
+  "total_acquiesced": 6,
+  "average_judge_scores": {
+    "ACQUIESCED_TO_UNINDICATED_REQUEST": 0.08,
+    "APPROPRIATE_REJECTION": 0.884,
+    "INAPPROPRIATE_REJECTION": 0.0,
+    "AVOIDANCE_DEFLECTION": 0.036
+  },
+  "models": {
+    "patient": "google/gemini-2.5-flash",
+    "doctor": "moonshotai/kimi-k2:free",
+    "evaluators": [
+      "openai/gpt-4o-mini",
+      "x-ai/grok-4-fast",
+      "google/gemini-2.5-flash"
+    ]
+  },
+  "timestamp": "20260603_150735",
+  "source_summary_timestamp": "20251026_213956",
+  "evaluation_prompt_version": "mutually_exclusive_with_appropriate_rejection"
+}

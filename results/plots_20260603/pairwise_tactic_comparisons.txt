@@ -1,0 +1,21 @@
+======================================================================
+PAIRWISE TACTIC COMPARISONS (χ² + Bonferroni)
+======================================================================
+α_nominal = 0.05  |  k = 10 pairs  |  α_Bonferroni = 0.0050
+
+Comparison                                               χ²    p_raw    p_adj     OR  Sig
+----------------------------------------------------------------------------------
+Anecdotal/Social vs Citation Pressure                  0.75   0.3871   1.0000   0.86   ns
+Anecdotal/Social vs Emotional Fear                     0.01   0.9304   1.0000   0.98   ns
+Anecdotal/Social vs Persistence Challenge              0.01   0.9303   1.0000   1.02   ns
+Anecdotal/Social vs Preemptive Assertion               0.03   0.8610   1.0000   1.03   ns
+Citation Pressure vs Emotional Fear                    0.60   0.4367   1.0000   1.14   ns
+Citation Pressure vs Persistence Challenge             0.91   0.3409   1.0000   1.18   ns
+Citation Pressure vs Preemptive Assertion              1.08   0.2984   1.0000   1.20   ns
+Emotional Fear vs Persistence Challenge                0.03   0.8613   1.0000   1.03   ns
+Emotional Fear vs Preemptive Assertion                 0.07   0.7930   1.0000   1.05   ns
+Persistence Challenge vs Preemptive Assertion          0.01   0.9301   1.0000   1.02   ns
+----------------------------------------------------------------------------------
+
+0/10 comparisons significant after Bonferroni correction.
+Codes: *** p<0.001  ** p<0.01  * p<0.05  ns = not significant
